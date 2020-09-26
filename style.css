@@ -1,0 +1,102 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.nav {
+    transition: 0.3s all ease;
+    position: absolute;
+    width: 260px;
+    left: -260px;
+    height: 100%;
+    background: black;
+    z-index: 9999;
+}
+
+.open {
+    left: 0px;
+}
+
+.menu {
+    list-style-type: none;
+}
+
+.menu__items {
+    color: white;
+    font-size: 1.4rem;
+    border-bottom: 1px solid #333;
+    padding: 1.2rem;
+    text-transform: uppercase;
+    transition: 0.3s all ease;
+}
+
+.menu__items:hover {
+    background: grey;
+    cursor: pointer;
+}
+
+.hamburger {
+    position: absolute;
+    top: 10px;
+    right: -50px;
+}
+
+.hamburger:hover {
+    cursor: pointer;
+}
+
+.hamburger span {
+    display: block;
+    background: black;
+    margin: 6px 0px;
+    height: 6px;
+    width: 36px;
+    border-radius: 2px;
+    position: relative;
+    transition: 0.3s;
+}
+
+.change.first-bar {
+    top: 11px;
+    transform: rotate(45deg);
+}
+
+.change.second-bar {
+    opacity: 0;
+}
+
+.change.third-bar {
+    bottom: 13px;
+    transform: rotate(-45deg);
+}
+
+.content {
+    padding: 2rem;
+    transition: 0.3s all ease;
+}
+
+.shift {
+    margin-left: 260px;
+}
+
+.content_heading {
+    text-align: center;
+    padding: 2rem;
+}
+
+.content_info {
+    padding: 2rem;
+    letter-spacing: 1px;
+}
+
+.content_image {
+    padding: 1rem;
+    width: 100%;
+    height: auto;
+}
